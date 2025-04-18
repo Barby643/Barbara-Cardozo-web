@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIB Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="menu">
+      <div class="menu-icon" id="menu-icon">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bienvenidos a MIB</h1>
+    <p>
+      En <strong>MIB</strong> podés encontrar variedad de cosas. Desde artículos de bazar, cosméticos y hasta productos propios de la marca. Todo con la mejor calidad.
+    </p>
+    <img src="MIB.jpg" alt="Imagen ilustrativa" width="100">
+    <h2>Nuestros Productos</h2>
+    <ul>
+      <li>Decoración para el hogar</li>
+      <li>Aromatizantes</li>
+      <li>Cosméticos</li>
+      <li>Productos MIB</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://www.instagram.com/barby.cardozo_/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="20">
+      </a>
+    </p>
+    <p>Barbara Araceli Micaela Cardozo - 2025</p>
+  </footer>
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
